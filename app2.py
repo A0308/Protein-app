@@ -122,7 +122,7 @@ if uploaded_file is not None:
     
    
     pdb = uploaded_file.getvalue().decode("utf-8")
-    st.write("Protein Structure:", color="red")
+    st.write("Protein Structure:")
     render_mol(pdb)
 
     st.markdown(highlighted_text, unsafe_allow_html=True)
